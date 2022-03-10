@@ -1,6 +1,6 @@
 # bmi203-project7
 
-[TODO: Add status badge for unit tests.]
+![Unit test status](https://github.com/khanu263/bmi203-project7/workflows/Unit%20tests/badge.svg)
 
 ## Overview
 
@@ -21,8 +21,8 @@ classifier for transcription factor binding sites.
 * ~~Finish the `one_hot_encode_seqs` function in the preprocess.py file~~
 * ~~Finish the `sample_seqs` function in the preprocess.py file~~
 * ~~Add unit tests for all required functions in test.py~~
-* [TODO] Make the module `pip` installable
-* [TODO] Set up GitHub Actions to run unit tests on push
+* ~~Make the module `pip` installable~~
+* ~~Set up GitHub Actions to run unit tests on push~~
 
 ## Step 2: generate your autoencoder
 
