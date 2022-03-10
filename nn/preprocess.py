@@ -1,13 +1,7 @@
-# BMI 203 Project 7: Neural Network
-
-
-# Importing Dependencies
 import numpy as np
 from typing import List, Tuple
 from numpy.typing import ArrayLike
 
-
-# Defining preprocessing functions
 def one_hot_encode_seqs(seq_arr: List[str]) -> ArrayLike:
     """
     This function generates a flattened one hot encoding of a list of nucleic acid sequences
@@ -29,12 +23,19 @@ def one_hot_encode_seqs(seq_arr: List[str]) -> ArrayLike:
                 G -> [0, 0, 0, 1]
             Then, AGA -> [1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0]
     """
-    pass
+    
+    # Define the encoding dictionary
+    encoding = {"A": [1, 0, 0, 0], "T": [0, 1, 0, 0], "C": [0, 0, 1, 0], "G": [0, 0, 0, 1]}
 
+    # Do the encoding for each string
+    encoded = []
+    for s in seq_arr:
+        encoded.append(np.array([encoding[i] for i in s]).flatten())
 
-def sample_seqs(
-        seqs: List[str]
-        labels: List[bool]) -> Tuple[List[seq], List[bool]]:
+    # Return an array version of the final list
+    return np.array(encoded)
+
+def sample_seqs(seqs: List[str], labels: List[bool]) -> Tuple[List[str], List[bool]]:
     """
     This function should sample your sequences to account for class imbalance. 
     Consider this as a sampling scheme with replacement.
@@ -51,4 +52,5 @@ def sample_seqs(
         sampled_labels: List[bool]
             List of labels for the sampled sequences
     """
+    
     pass
