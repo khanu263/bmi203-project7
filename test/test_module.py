@@ -37,4 +37,19 @@ def test_one_hot_encode():
     assert np.all(np.isclose(preprocess.one_hot_encode_seqs(seq_arr), encoded)), "One-hot encodings do not match!"
 
 def test_sample_seqs():
-    pass
+    
+    # Try more positive than negative labels
+    seqs = ["1", "2", "3", "4"]
+    labels = [True, True, True, False]
+    expected_seqs = ["1", "2", "3", "4", "4", "4"]
+    expected_labels = [True, True, True, False, False, False]
+    sampled_seqs, sampled_labels = preprocess.sample_seqs(seqs, labels)
+    assert expected_seqs == sampled_seqs, "Sampled sequences are incorrect (more positive labels)."
+    assert expected_labels == sampled_labels, "Sampled labels are incorrect (more positive labels)."
+    
+    # Try more negative than positive labels
+    labels = [True, False, False, False]
+    expected_seqs = ["1", "1", "1", "2", "3", "4"]
+    sampled_seqs, sampled_labels = preprocess.sample_seqs(seqs, labels)
+    assert expected_seqs == sampled_seqs, "Sampled sequences are incorrect (more negative labels)."
+    assert expected_labels == sampled_labels, "Sampled labels are incorrect (more negative labels)."

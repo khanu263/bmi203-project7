@@ -18,8 +18,8 @@ classifier for transcription factor binding sites.
 ## Step 1: finish the neural network
 
 * [TODO] Finish all methods that have a `pass` statement in the nn.py file
-* [TODO] Finish the `one_hot_encode_seqs` function in the preprocess.py file
-* [TODO] Finish the `sample_seqs` function in the preprocess.py file
+* ~~Finish the `one_hot_encode_seqs` function in the preprocess.py file~~
+* ~~Finish the `sample_seqs` function in the preprocess.py file~~
 * [TODO] Add unit tests for all required functions in test.py
 * [TODO] Make the module `pip` installable
 * [TODO] Set up GitHub Actions to run unit tests on push
