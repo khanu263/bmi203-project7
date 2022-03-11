@@ -36,13 +36,13 @@ input via 'decoding' layer(s). Autoencoders are most often used as a dimensional
 
 Here you will train a 64x16x64 autoencoder. All of the following work should be done in a jupyter notebook.
 
-* [TODO] Generate an instance of your NeuralNetwork class for the 64x16x64 autoencoder
-* [TODO] Read in toy dataset 'digits' from sklearn using digits = sklearn.datasets.load_digits()
-* [TODO] Split the digits dataset into a train and a validation set
-* [TODO] Train your autoencoder on the train split of your digits dataset
-* [TODO] Plot your training and validation loss per epoch
-* [TODO] Explain in your jupyter notebook why you chose the hyperparameter values that you did
-* [TODO] Quantify your average reconstruction error over the dataset.
+* ~~Generate an instance of your NeuralNetwork class for the 64x16x64 autoencoder~~
+* ~~Read in toy dataset 'digits' from sklearn using digits = sklearn.datasets.load_digits()~~
+* ~~Split the digits dataset into a train and a validation set~~
+* ~~Train your autoencoder on the train split of your digits dataset~~
+* ~~Plot your training and validation loss per epoch~~
+* ~~Explain in your jupyter notebook why you chose the hyperparameter values that you did~~
+* ~~Quantify your average reconstruction error over the dataset.~~
 
 ## Step 3: generate your classifier
 
