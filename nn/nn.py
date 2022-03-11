@@ -228,7 +228,7 @@ class NeuralNetwork:
         if self._loss_func == "mse":
             dA_curr = self._mean_squared_error_backprop(y, y_hat)
         elif self._loss_func == "bce":
-            dA_curr = self._mean_squared_error_backprop(y, y_hat)
+            dA_curr = self._binary_cross_entropy_backprop(y, y_hat)
 
         # Go through the layers in reverse
         for idx, layer in reversed(list(enumerate(self.arch))):
