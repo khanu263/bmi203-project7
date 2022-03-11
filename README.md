@@ -63,16 +63,16 @@ there are much fewer positive sequences than negative sequences. In order to ove
 you will need to implement a sampling scheme to ensure that class imbalance does not affect
 your training.
 
-* [TODO] Use the 'read_text_file' function from preprocess.py to read in the 137 positive Rap1 motif examples
-* [TODO] Use the 'read_fasta_file' function to read in all the negative examples from all 1kb upstream in yeast
-* [TODO] Explain the sampling scheme you used in the 'sample_seq' function in the preprocess.py file and why you chose it
-* [TODO] Generate a training and a validation set for training your classifier
-* [TODO] One hot encode your training and validation sets using your implementation of the 'one_hot_encode_seqs' function in the preprocess.py file
-* [TODO] Train your neural network
-* [TODO] Explain your choice of loss function in the jupyter notebook
-* [TODO] Explain your choice of hyperparameters in the jupyter notebook
-* [TODO] Plot the training and validation loss curves per epoch
-* [TODO] Print out the accuracy of your classifier on your validation dataset
+* ~~Use the 'read_text_file' function from preprocess.py to read in the 137 positive Rap1 motif examples~~`
+* ~~Use the 'read_fasta_file' function to read in all the negative examples from all 1kb upstream in yeast~~`
+* ~~Explain the sampling scheme you used in the 'sample_seq' function in the preprocess.py file and why you chose it~~`
+* ~~Generate a training and a validation set for training your classifier~~`
+* ~~One hot encode your training and validation sets using your implementation of the 'one_hot_encode_seqs' function in the preprocess.py file~~
+* ~~Train your neural network~~
+* ~~Explain your choice of loss function in the jupyter notebook~~
+* ~~Explain your choice of hyperparameters in the jupyter notebook~~
+* ~~Plot the training and validation loss curves per epoch~~
+* ~~Print out the accuracy of your classifier on your validation dataset~~
 
 ## Grading (50 points total)
 
