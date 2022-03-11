@@ -343,7 +343,7 @@ class NeuralNetwork:
                 per_epoch_loss_val.append(self._binary_cross_entropy(y_val, pred))
 
             # Occasionally print progress
-            if e % 5 == 0:
+            if e % 20 == 0:
                 print(f"Finished epoch {e + 1} of {self.epochs}.")
         
         # Return loss lists
