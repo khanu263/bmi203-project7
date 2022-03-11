@@ -304,7 +304,7 @@ class NeuralNetwork:
         num_batches = np.ceil(len(y_train) / self._batch_size)
 
         # Loop over epochs
-        for e in range(self.epochs):
+        for e in range(self._epochs):
 
             # Shuffle the training data
             shuffle = np.random.permutation(len(y_train))
@@ -344,7 +344,7 @@ class NeuralNetwork:
 
             # Occasionally print progress
             if e % 20 == 0:
-                print(f"Finished epoch {e + 1} of {self.epochs}.")
+                print(f"Finished epoch {e + 1} of {self._epochs}.")
         
         # Return loss lists
         return per_epoch_loss_train, per_epoch_loss_val
